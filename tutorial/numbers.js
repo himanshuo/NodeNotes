@@ -103,3 +103,37 @@ x.valueOf();            // returns 123 from variable x
 // NaN	Represents a "Not-a-Number" value
 // POSITIVE_INFINITY	Represents infinity (returned on overflow)
 // Example: Number.MAX_VALUE;
+
+
+
+// Math object allows you to do mathy tasks
+
+// abs(x)	Returns the absolute value of x
+// acos(x)	Returns the arccosine of x, in radians
+// asin(x)	Returns the arcsine of x, in radians
+// atan(x)	Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+// atan2(y,x)	Returns the arctangent of the quotient of its arguments
+// ceil(x)	Returns x, rounded upwards to the nearest integer
+// cos(x)	Returns the cosine of x (x is in radians)
+// exp(x)	Returns the value of Ex
+// floor(x)	Returns x, rounded downwards to the nearest integer
+// log(x)	Returns the natural logarithm (base E) of x
+// max(x,y,z,...,n)	Returns the number with the highest value
+// min(x,y,z,...,n)	Returns the number with the lowest value
+// pow(x,y)	Returns the value of x to the power of y
+// random()	Returns a random number between 0 and 1
+// round(x)	Rounds x to the nearest integer
+// sin(x)	Returns the sine of x (x is in radians)
+// sqrt(x)	Returns the square root of x
+// tan(x)	Returns the tangent of an angle
+
+
+//Math Constants
+Math.E          // returns Euler's number
+Math.PI         // returns PI
+Math.SQRT2      // returns the square root of 2
+Math.SQRT1_2    // returns the square root of 1/2
+Math.LN2        // returns the natural logarithm of 2
+Math.LN10       // returns the natural logarithm of 10
+Math.LOG2E      // returns base 2 logarithm of E
+Math.LOG10E     // returns base 10 logarithm of E
