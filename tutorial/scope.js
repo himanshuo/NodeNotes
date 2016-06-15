@@ -7,6 +7,7 @@ function myFunction() {
 }
 
 
+
 // The lifetime of a JavaScript variable starts when it is declared.
 // Local variables are deleted when the function is completed.
 // Global variables are deleted when you close the page.
