@@ -38,3 +38,39 @@ describe('Hamming', function () {
   });
 
 });
+
+
+describe('Type of Hamming', function () {
+  var hamming = new Hamming();
+
+  it('is string,string', function () {
+    expect(hamming.compute('abc', 'abD')).toEqual(1);
+  });
+
+  it('is string, String', function () {
+    expect(hamming.compute('A',new String('G'))).toEqual(1);
+  });
+
+  it('is String,string', function () {
+    expect(hamming.compute(new String('AG'),'CT')).toEqual(2);
+  });
+
+  it('is String,String', function () {
+    expect(hamming.compute(new String('AT'),new String('CT'))).toEqual(1);
+  });
+
+  it('is string, obj', function () {
+    expect(function() { hamming.compute('GGACG', {var: 'GGTCG'}); }).toThrow(
+      new Error('DNA strands must be string or String.')
+    );
+  });
+
+  it('is number,string', function () {
+    expect(function() { hamming.compute(4, '4'); }).toThrow(
+      new Error('DNA strands must be string or String.')
+    );
+  });
+
+  
+
+});

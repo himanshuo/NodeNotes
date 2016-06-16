@@ -8,11 +8,24 @@ var Hamming = function() {};
 
 
 Hamming.prototype.compute = function(seq1, seq2) {
-  if(seq1 == seq2){return 0;}
 
   //check types
-  if( (typeof(seq1) != 'string' || typeof(seq2) != 'string') && ()){
-    throw new Error('DNA strands must be of type String.');
+  // a= seq1 is string
+  var a = typeof(seq1) == 'string'
+  // b= seq2 is string
+  var b = typeof(seq2) == 'string'
+  // c=seq1 is String
+  var c = seq1 instanceof String
+  // d=seq2 is String
+  var d = seq2 instanceof String
+
+  // good: (a OR c) AND (b or d)
+  // bad: !((a OR c) AND (b OR d))
+  //      !(a OR c) OR !(b OR d)
+  //      (!a AND !c) OR (!b AND !d)
+
+  if((!a && !c) || (!b && !d)){
+    throw new Error('DNA strands must be string or String.');
   }
 
   //check length

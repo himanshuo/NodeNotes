@@ -28,4 +28,4 @@ typeof null                  // object (bad on js's part)
 null === undefined           // false (null is of type object)
 null == undefined            // true  (value of null is undefined)
 
-instanceof(3)  //returns true if an object is an instance of an object type (including subtypes)
+// object instanceof Class  //returns true if an object is an instance of an object type (including subtypes)
